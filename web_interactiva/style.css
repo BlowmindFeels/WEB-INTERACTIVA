@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #FFD700;
-    color: #f0f0f0;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
 }
@@ -15,7 +15,7 @@ p{
 
 .reto {
     margin: 20px 0;
-    background: #15803d;
+    background: #0a0a0a;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #15803d;
@@ -29,7 +29,7 @@ input {
 }
 
 button {
-    background: #3e5ea3;
+    background: #ddb637;
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
@@ -49,4 +49,12 @@ button:hover {
     border-radius: 10px;
     font-size: 1.2em;
     color: #000;
+}
+#mensaje-secreto{
+        color: #000;
+
+}
+#mensaje-succ{
+        color: #000;
+
 }
