@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Interactiva Completa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fundamentos de la Programación</h1>
+    <p >Resuelve los siguientes desafíos.</p>
+
+    <!-- Interacciones -->
+    <div class="reto">
+        <label>1. Ingresa el resultado de 5 + 7: </label>
+        <input type="number" id="respuesta1">
+        <button onclick="verificarReto1()">Verificar</button>
+        <span id="estado1"></span>
+    </div>
+
+    <div class="reto">
+        <label>2. Ingresa el resultado de 9 × 3: </label>
+        <input type="number" id="respuesta2">
+        <button onclick="verificarReto2()">Verificar</button>
+        <span id="estado2"></span>
+    </div>
+
+    <div class="reto">
+        <label>3. Ingresa el resultado de 100 ÷ 4: </label>
+        <input type="number" id="respuesta3">
+        <button onclick="verificarReto3()">Verificar</button>
+        <span id="estado3"></span>
+    </div>
+
+    <!-- Mensaje secreto -->
+    <div id="mensaje-secreto" class="oculto">
+        🎉 ¡Felicidades! Has desbloqueado el mensaje secreto:  
+        <strong>"EL dato curioso es: El olor de hierba recién cortada, es en realidad, <br> el olor que liberan las plantas cuando se encuentran en peligro. Como un desesperado grito de auxilio de que un insecto se la está comiendo."</strong>
+    </div>
+     <div id="mensaje-succ" class="oculto">
+        🎉 ¡Felicidades! Has acertado! 
+        <strong>"Encuentra el mensaje Secreto"</strong>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
