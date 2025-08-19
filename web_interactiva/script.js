@@ -6,7 +6,6 @@ let reto1_es_13 = false;
 let reto2_es_13 = false;
 let reto3_es_13 = false;
 
-// Función reutilizable
 function verificarRespuesta(idInput, idEstado, respuestaCorrecta) {
     const valor = parseInt(document.getElementById(idInput).value);
     const estado = document.getElementById(idEstado);
@@ -26,7 +25,7 @@ function verificarRespuesta(idInput, idEstado, respuestaCorrecta) {
     }
 }
 
-// Reto 1
+// pregunta 1
 function verificarReto1() {
     let resultado = verificarRespuesta("respuesta1", "estado1", 12);
     reto1 = (resultado === "correcto");
@@ -34,7 +33,7 @@ function verificarReto1() {
     verificarTodos();
 }
 
-// Reto 2
+// pregunta 2
 function verificarReto2() {
     let resultado = verificarRespuesta("respuesta2", "estado2", 27);
     reto2 = (resultado === "correcto");
@@ -42,7 +41,7 @@ function verificarReto2() {
     verificarTodos();
 }
 
-// Reto 3
+// pregunta 3
 function verificarReto3() {
     let resultado = verificarRespuesta("respuesta3", "estado3", 25);
     reto3 = (resultado === "correcto");
@@ -50,14 +49,14 @@ function verificarReto3() {
     verificarTodos();
 }
 
-// Verificar condiciones
+
 function verificarTodos() {
-    // Caso normal: todas correctas
+
     if (reto1 && reto2 && reto3) {
         document.getElementById("mensaje-succ").classList.remove("oculto");
     }
 
-    // Caso secreto: todas 13
+
     if (reto1_es_13 && reto2_es_13 && reto3_es_13) {
         document.getElementById("mensaje-secreto").classList.remove("oculto");
     }
